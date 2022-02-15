@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>RegisterAction</servlet-name>
+        <servlet-class>com.register.RegisterAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TweetAction</servlet-name>
+        <servlet-class>com.tweet.TweetAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FakeTweetAction</servlet-name>
+        <servlet-class>com.tweet.FakeTweetAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterAction</servlet-name>
+        <url-pattern>/RegisterAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TweetAction</servlet-name>
+        <url-pattern>/TweetAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FakeTweetAction</servlet-name>
+        <url-pattern>/FakeTweetAction</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
